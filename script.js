@@ -1,4 +1,4 @@
-const userSelect = document.getElementById("userSelect");
+const Selection = document.getElementById("choix");
 const listItems = document.getElementById("liste");
 
 fetch(
@@ -14,9 +14,9 @@ fetch(
       return option;
     });
 
-    options.forEach((option) => userSelect.appendChild(option));
+    options.forEach((option) => Selection.appendChild(option));
 
-    userSelect.addEventListener("click", function () {
+    Selection.addEventListener("click", function () {
       fetch(
         "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-atlas_regional-effectifs-d-etudiants-inscrits/records?limit=20&refine=annee_universitaire%3A%222022-23%22&refine=sexe_de_l_etudiant%3A%22Feminin%22&refine=geo_nom%3A%22Toulouse%22"
       )
