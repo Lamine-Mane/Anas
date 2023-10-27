@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(141, 230, 233);
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.774);
+  margin: 5px;
+  padding: 1em;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+a {
+  text-decoration: none;
+}
