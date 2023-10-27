@@ -31,7 +31,7 @@ fetch(
               li.textContent = liste.effectif;
               return li;
             });
-            console.log(ligne);
+            //console.log(ligne);
             ligne.forEach((li) => listItems.appendChild(li));
           });
       }, 2000);
