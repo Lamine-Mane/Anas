@@ -8,14 +8,17 @@ fetch(
   .then((results) => {
     //console.log(results);
     const data1 = results.results;
+    const data = [...data1]; // spread operator
     const options = data1.map((result) => {
       const option = document.createElement("option");
       option.textContent = result.regroupement;
+      const { regroupement } = result;
       return option;
     });
 
     options.forEach((option) => Selection.appendChild(option));
 
+    //destructuring
     Selection.addEventListener("click", function () {
       listItems.innerHTML = "";
       setTimeout(() => {
