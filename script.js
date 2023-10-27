@@ -24,7 +24,7 @@ fetch(
         )
           .then((response) => response.json())
           .then((results) => {
-            console.log(results);
+            //console.log(results);
             listItems.innerHTML = "";
             const ligne = results.results.map((liste) => {
               const li = document.createElement("li");
