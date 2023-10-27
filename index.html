@@ -2,15 +2,26 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
     <title>TP FINAL</title>
   </head>
   <body>
-    <h1>Effectif des étudiantes inscrites à Toulouse en 2022-2023</h1>
-    <h2>Faites votre choix</h2>
-    <select id="choix"></select>
+    <main>
+      <h1>Effectif des étudiantes inscrites à Toulouse en 2022-2023</h1>
+      <h2>Faites votre choix</h2>
+      <select id="choix"></select>
 
-    <h2>Stats liés à votre choix</h2>
-    <ul id="liste"></ul>
+      <h2>Stats liés à votre choix</h2>
+      <ul id="liste"></ul>
+    </main>
+    <footer>
+      Données accessibles via:
+      <a
+        href="https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-atlas_regional-effectifs-d-etudiants-inscrits/table/?disjunctive.rgp_formations_ou_etablissements&refine.annee_universitaire=2022-23&refine.sexe_de_l_etudiant=Feminin&sort=-rentree&refine.geo_nom=Toulouse"
+        >API</a
+      >
+    </footer>
   </body>
 </html>
