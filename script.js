@@ -34,6 +34,6 @@ fetch(
             //console.log(ligne);
             ligne.forEach((li) => listItems.appendChild(li));
           });
-      }, 2000);
+      }, 4000);
     });
   });
